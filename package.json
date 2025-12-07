@@ -1,6 +1,6 @@
 {
   "name": "nev-skillgraph-next",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "pages:build": "npx @cloudflare/next-on-pages",
-    "force-cleanup": "node -e \"['index.html','index.tsx','App.tsx','postcss.config.mjs','tailwind.config.ts','vite.config.ts','metadata.json'].forEach(f => { try { require('fs').rmSync(f, {force:true}); console.log('Deleted: '+f); } catch(e){ console.log('Skipped: '+f); } })\""
+    "force-cleanup": "node -e \"['index.html','index.tsx','App.tsx','postcss.config.mjs','tailwind.config.ts','vite.config.ts','metadata.json','package-lock.json'].forEach(f => { try { require('fs').rmSync(f, {force:true}); console.log('Deleted: '+f); } catch(e){ console.log('Skipped: '+f); } })\""
   },
   "dependencies": {
     "@google/genai": "*",
