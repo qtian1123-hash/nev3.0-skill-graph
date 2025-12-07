@@ -13,7 +13,7 @@
     "@google/genai": "*",
     "d3": "^7.9.0",
     "lucide-react": "^0.363.0",
-    "next": "14.1.4",
+    "next": "14.3.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "recharts": "^2.12.3"
