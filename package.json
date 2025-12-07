@@ -7,15 +7,16 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "pages:build": "npx @cloudflare/next-on-pages"
+    "pages:build": "npx @cloudflare/next-on-pages",
+    "force-cleanup": "node -e \"['index.html','index.tsx','App.tsx','postcss.config.mjs','tailwind.config.ts','vite.config.ts','metadata.json'].forEach(f => { try { require('fs').rmSync(f, {force:true}); console.log('Deleted: '+f); } catch(e){ console.log('Skipped: '+f); } })\""
   },
   "dependencies": {
     "@google/genai": "*",
     "d3": "^7.9.0",
     "lucide-react": "^0.363.0",
-    "next": "15.5.2",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "next": "15.0.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "recharts": "^2.12.3"
   },
   "devDependencies": {
@@ -29,5 +30,8 @@
     "tailwindcss": "^3.4.1",
     "typescript": "^5.4.3",
     "vercel": "^32.3.0"
+  },
+  "overrides": {
+    "next": "$next"
   }
 }
